@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+langchain==0.3.27
+langchain-openai==0.3.30
+langchain-groq==0.3.7
+langchain_community==0.3.27
+pydantic
+aiohttp
+requests
+pandas
+faiss-cpu ; platform_system != "Linux" or platform_machine != "x86_64"

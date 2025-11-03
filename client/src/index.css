@@ -1,0 +1,31 @@
+:root{
+  --bg:#0f1721;
+  --panel:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#4f46e5;
+  --success:#10b981;
+  --danger:#ef4444;
+  --surface:#0b1220;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071025 0%, #071829 100%);color:#e6eef6;min-height:100vh;padding:24px}
+.app{max-width:920px;margin:0 auto}
+header h1{margin:0 0 6px}
+header p{margin:0 0 18px;color:var(--muted)}
+.chatbot{display:flex;flex-direction:column;gap:12px}
+.messages{background:rgba(255,255,255,0.03);padding:12px;border-radius:8px;min-height:200px;max-height:60vh;overflow:auto}
+.msg{margin-bottom:12px;padding:8px;border-radius:6px}
+.msg.user{background:rgba(79,70,229,0.08);}
+.msg.assistant{background:rgba(255,255,255,0.02)}
+.msg .meta{display:flex;gap:8px;align-items:center;margin-bottom:6px}
+.tag{background:var(--accent);color:white;padding:2px 6px;border-radius:999px;font-size:12px}
+.context{margin-top:8px}
+.composer{display:flex;flex-direction:column;gap:8px}
+textarea{width:100%;resize:vertical;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.controls{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.rag-toggles{display:flex;gap:8px}
+.rag-toggles button{padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;cursor:pointer}
+.rag-toggles button.active{background:var(--accent);border-color:transparent}
+.actions button{padding:8px 14px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+.error{color:var(--danger);margin-top:6px}
