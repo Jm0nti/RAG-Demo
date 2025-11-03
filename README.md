@@ -5,6 +5,8 @@ This repository contains a minimal chatbot template that demonstrates RAG (Retri
 Inspired to show RAG architecture from the work "Retrieval-Augmented Generation for
 Knowledge-Intensive NLP Tasks" (Lewis et al., 2020) https://arxiv.org/abs/2005.11401
 
+![RAG architecture](client/src/RAG.png)
+
 
 The dense vector can be replaced with any FAISS vector_db, it's easily swapable, you will only need to replace the existent data/FAISS/vector_db with your dense vector.
 
@@ -37,3 +39,9 @@ Notes:
 - Make sure to have the following API keys in your .env file:
   - `OPENAI_API_KEY`
   - `GROQ_API_KEY`
+
+
+### How it works
+The existent dense vector contains information about subjects and its prerequisites, types according to different majors, number of credits, and information about teachers from Universidad nacional de colombia - Sede Medellín.
+
+![Example](client/src/how.png)
